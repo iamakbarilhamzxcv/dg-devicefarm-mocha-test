@@ -1,0 +1,13 @@
+export const ByText = (text: String) => `android=new UiSelector().text("${text}")`;
+export const ByClassNameAndText = (className: string, text: string) => `android=new UiSelector().className("${className}").text("${text}")`;
+export const ByTextAndInstance = (text: String, instance: number) => `android=new UiSelector().text("${text}").instance(${instance})`;
+export const ByResourceId = (id: String) => `android=new UiSelector().resourceId("${id}")`;
+export const ByClassName = (className: String) => `android=new UiSelector().className("${className}")`;
+export const ByClassNameAndIndex = (className: String, index: number) => `android=new UiSelector().className("${className}").index(${index})`;
+export const ByClassNameAndIndexAndInstance = (className: String, index: number, instance: number) => `android=new UiSelector().className("${className}").index(${index}).instance(${instance})`;
+export const ByClassNameAndTextAndIndexAndInstance = (className: String, text: String, index: number, instance: number) => `android=new UiSelector().className("${className}").text("${text}").index(${index}).instance(${instance})`;
+export const ByClassNameAndInstance = (className: String, instance: number) => `android=new UiSelector().className("${className}").instance(${instance})`;
+export const ByDescription = (desc: String) => `android=new UiSelector().description("${desc}")`;
+export const ByContainDescription = (desc: String) => `android=new UiSelector().descriptionContains("${desc}")`;
+export const ByResourceIdAndIndex = (id:string, index:number) => `(//*[@resource-id="${id}"])[${index}]`;
+export const setResourceId = (id: string) => `//*[@resource-id="${id}"]`;

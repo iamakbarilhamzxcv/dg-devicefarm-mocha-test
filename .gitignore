@@ -1,0 +1,6 @@
+allure-report/
+allure-results/
+apps/appDG.apk
+.DS_Store
+*.log
+# Tambahkan folder atau file lain yang tidak perlu di-version control
